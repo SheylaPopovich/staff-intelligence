@@ -1,0 +1,29 @@
+{
+  "name": "staff-intelligence",
+  "version": "1.0.0",
+  "description": "employee tracker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SheylaPopovich/staff-intelligence.git"
+  },
+  "keywords": [
+    "employee",
+    "tracker"
+  ],
+  "author": "Sheyla Popovich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SheylaPopovich/staff-intelligence/issues"
+  },
+  "homepage": "https://github.com/SheylaPopovich/staff-intelligence#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "express": "^4.17.1",
+    "inquirer": "^8.1.2",
+    "mysql2": "^2.3.0"
+  }
+}
