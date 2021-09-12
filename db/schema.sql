@@ -13,10 +13,11 @@ CREATE TABLE department (
 
 
 CREATE TABLE roles (
+    title VARCHAR(30), 
     id INT PRIMARY KEY,
-    title VARCHAR(30),  
-    salary DECIMAL, 
-    department_id INT 
+    department_id INT,
+    salary DECIMAL
+    
 );
 
 
