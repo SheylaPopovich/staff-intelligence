@@ -6,13 +6,13 @@ USE employees_db;
 
 
 CREATE TABLE department (
-    id INT PRIMARY KEY,
-    name VARCHAR(30) 
+    id INT PRIMARY KEY ,
+    name VARCHAR(30)
 );
 
 
 
-CREATE TABLE roles (
+CREATE TABLE role (
     title VARCHAR(30), 
     id INT PRIMARY KEY,
     department_id INT,
@@ -22,7 +22,7 @@ CREATE TABLE roles (
 
 
 
-CREATE TABLE employees (
+CREATE TABLE employee (
     id INT PRIMARY KEY,
     first_name VARCHAR(30), 
     last_name VARCHAR(30), 

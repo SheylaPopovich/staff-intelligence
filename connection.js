@@ -1,37 +1,35 @@
 const express = require('express');
 const mysql = require('mysql2');
 const inquirer = require('inquirer');
-const PORT = process.env.PORT || 3001;
 
-const app = express();
+
 const chalk = require('chalk');
 
 
 let ownerOptions = ["View All Employees", "Add Employee", "Update Employee Role", "View All Roles", "Add Roles", "View All Departments", "Add Department", "Quit"];
 
 
-
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
+const PORT = process.env.PORT || 3000;
+const app = express();
 
 
-const db = mysql.createConnection(
+const connection = mysql.createConnection(
   {
     host: 'localhost',
-    port: 3001,
     user: 'root',
-    password: "free",
+    password: "Christ303!",
     database: 'employees_db'
-  }
+  },
+  console.log(`Connected to the employees_db database.`)
   );
 
 
-db.connect(function(err) {
+connection.connect(function(err) {
     if (err) throw err;
-    console.log("Connected as Id" + db.threadId);
+    console.log("Connected as Id" + connection.threadId);
     startPrompt();
 });
+
 
 
 function startPrompt() {
@@ -42,8 +40,6 @@ console.log(chalk.blue.bold(`===================================================
     ===================================================
        to better organize your company successfully!
     ===================================================`));
-
-
     
 inquirer.prompt([{
     name: "task",
@@ -57,6 +53,6 @@ inquirer.prompt([{
 });
 }
 
-app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT} 🚀`)
-);
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
