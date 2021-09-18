@@ -70,12 +70,12 @@ function viewAllEmployees () {
    })
 }
 
-//  first_name VARCHAR(100) NOT NULL, 
-last_name VARCHAR(100) NOT NULL, 
-role_id INT, 
-manager_id INT, 
+// //  first_name VARCHAR(100) NOT NULL, 
+// last_name VARCHAR(100) NOT NULL, 
+// role_id INT, 
+// manager_id INT, 
 
-.then 
-//google how to inset into a sequal statement 
+// .then 
+// //google how to inset into a sequal statement 
 
  
