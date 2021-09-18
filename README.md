@@ -1,5 +1,3 @@
-# staff-intelligence
-
 # <p align="center">Staff Intelligence</p> 
 
 <p align="center">
