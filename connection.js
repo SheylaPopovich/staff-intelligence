@@ -1,16 +1,13 @@
-const express = require('express');
 const mysql = require('mysql2');
 const inquirer = require('inquirer');
 
 
 const chalk = require('chalk');
+const { response } = require('express');
 
 
 let ownerOptions = ["View All Employees", "Add Employee", "Update Employee Role", "View All Roles", "Add Roles", "View All Departments", "Add Department", "Quit"];
 
-
-const PORT = process.env.PORT || 3000;
-const app = express();
 
 
 const connection = mysql.createConnection(
@@ -49,10 +46,36 @@ inquirer.prompt([{
 },
 ])
 .then ((answer) => {
-    console.log(answer.task);
+  switch(answer.task) {
+    case "View All Employees":
+      viewAllEmployees()
+
+      break;
+  
+    default: console.log("this is the default")  //THIS IS THE ELSE IN IF STATEMENT:
+      // code block
+
+  }
+
+
+  console.log(answer.task);
 });
 }
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+function viewAllEmployees () {
+   connection.query("SELECT * FROM employee;", (err, response) => {
+     if (err) throw err
+     console.table(response)
+     startPrompt()
+   })
+}
+
+//  first_name VARCHAR(100) NOT NULL, 
+last_name VARCHAR(100) NOT NULL, 
+role_id INT, 
+manager_id INT, 
+
+.then 
+//google how to inset into a sequal statement 
+
+ 

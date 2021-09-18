@@ -13,7 +13,7 @@ VALUES
        ("Business Development Manager",  1, 84553),
        ("Business Development Representative", 1, 59321),
        ("Marketing Executive", 2, 69521),
-       ("Marketing Specialist", 2, 60,736),
+       ("Marketing Specialist", 2, 60736),
        ("Sales Engineer", 2, 55744),
        ("Chief Architect", 3, 85572),
        ("Software Architect", 3, 65720),
@@ -30,8 +30,8 @@ VALUES
        ("Leela", "Tyson", 7, NULL),
        ("Aya", "Kelley", 6, 3),
        ("Tara", "Santiago", 5, NULL),
-       ("Omari", "Pearce", 4, 2),
-       ("Devon", "Spence", 3, 2),
+       ("Omari", "Pearce", 4, 1),
+       ("Devon", "Spence", 3, 1),
        ("Christopher", "Sinclair", 2, 1),
        ("Dolores", "Lynn", 1, 1);
 
