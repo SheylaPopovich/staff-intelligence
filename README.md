@@ -15,6 +15,7 @@ The days of taking pen to paper is nearly extinct. It's all about working smarte
 
 ## **Application** 
 The following images show the web application's appearance and functionality:
+This [demo video](https://drive.google.com/file/d/1R1dDyL09BMt3gVUUMm3vgprD0LDbgkin/view) will walk you through the application and its usage.
 ![alt text](https://github.com/SheylaPopovich/scribe-life-made-easy/blob/main/Assets/note-taker-landingpage.png)
 <br>
 <br>
