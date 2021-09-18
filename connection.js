@@ -1,15 +1,14 @@
 const mysql = require('mysql2');
 const inquirer = require('inquirer');
 
-
 const chalk = require('chalk');
 const { response } = require('express');
+// const { response } = require('express');
 
 
-let ownerOptions = ["View All Employees", "Add Employee", "Update Employee Role", "View All Roles", "Add Roles", "View All Departments", "Add Department", "Quit"];
+let ownerOptions = ["View All Departments", "View All Roles", "View All Employees", "Add Department", "Add Role", "Add Employee", "Update Employee Role", "Quit"];
 
-
-
+//create connection to database
 const connection = mysql.createConnection(
   {
     host: 'localhost',
@@ -28,7 +27,7 @@ connection.connect(function(err) {
 });
 
 
-
+//create prompts for Employee app 
 function startPrompt() {
 console.log(chalk.blue.bold(`===========================================================
           🎇✨ Welcome to Staff Intelligence ✨🎇
@@ -47,35 +46,75 @@ inquirer.prompt([{
 ])
 .then ((answer) => {
   switch(answer.task) {
-    case "View All Employees":
-      viewAllEmployees()
+    case "View All Departments":
+    viewAllDepartments();
+    break;
 
+    case "View All Roles":
+      viewAllRoles();
       break;
-  
-    default: console.log("this is the default")  //THIS IS THE ELSE IN IF STATEMENT:
+
+
+    case "View All Employees":
+      viewAllEmployees();
+      break;
+
+
+    case "Add Department":
+
+    break;
+
+
+    default: console.log("this is the default");//THIS IS THE ELSE IN IF STATEMENT:
       // code block
-
   }
-
-
   console.log(answer.task);
 });
 }
 
-function viewAllEmployees () {
-   connection.query("SELECT * FROM employee;", (err, response) => {
-     if (err) throw err
-     console.table(response)
-     startPrompt()
-   })
+//functions to select each table 
+function viewAllDepartments () {
+  connection.query("SELECT * FROM department;", (err, response) => {
+    if (err) throw err
+    console.table(response)
+    startPrompt()
+   });
+};
+
+function viewAllRoles () {
+  connection.query("SELECT * FROM role;", (err, response) => {
+    if (err) throw err;
+    console.table(response);
+    startPrompt();
+  });
 }
 
-// //  first_name VARCHAR(100) NOT NULL, 
-// last_name VARCHAR(100) NOT NULL, 
-// role_id INT, 
-// manager_id INT, 
+function viewAllEmployees () {
+   connection.query("SELECT * FROM employee;", (err, response) => {
+     if (err) throw err;
+     console.table(response);
+     startPrompt();
+   });
+}
 
-// .then 
-// //google how to inset into a sequal statement 
+
+//*****function to add to each table****
+// function addDepartment () {
+//   const newDepartment = () =>{
+//     inquirer.prompt([
+//       {
+//         type: 'input',
+//         name: 'newDepartment',
+//         message: 'What department would you like to add?',
+//       }
+//     ]);
+//   };
+// }
+// .then(  
+//   connection.query ("INSERT INTO department (department_name) VALUES (?);", [response.department_name]);
+//   if (err) throw err;
+//      console.table(response);
+//      startPrompt();
+// );
 
  
