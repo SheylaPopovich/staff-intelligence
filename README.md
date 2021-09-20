@@ -9,9 +9,18 @@
 <br>
 
 ## **Description**
-The days of taking pen to paper is nearly extinct. It's all about working smarter not hard and having things instantly at your fingertips. This is a note taking application was made with just that in mind. This product delivers a simplified way for a user to input notes, save for tracking purposes, and a delete option once the note has been completed. The purpose of this application is for users that need help with keeping track of day to day tasks. Using the "Note Taker" will allow the user to have well written information available whenever needed.    
-<br>
-<br>
+Employee Tracker prompts the user with options to 'add', 'view' or 'update' an employee, department or role through the table created in SQL. Depending on the user choice, the user is then given a series of questions to accomplish the original user's choice.
+Technologies Used
+
+HTML
+JavaScript
+Inquirer
+Node.js
+SQL
+MySQL Workbench
+
+
+
 
 ## **Application** 
 The following images show the web application's appearance and functionality:
