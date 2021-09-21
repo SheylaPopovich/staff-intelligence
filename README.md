@@ -12,6 +12,7 @@
 Employee Tracker prompts the user with options to 'add', 'view' or 'update' an employee, department or role through the table created in SQL. Depending on the user choice, the user is then given a series of questions to accomplish the original user's choice.
 Technologies Used
 
+<br> Technologies Used<br>
 HTML
 JavaScript
 Inquirer
@@ -25,10 +26,10 @@ MySQL Workbench
 ## **Application** 
 The following images show the web application's appearance and functionality:
 This [demo video](https://drive.google.com/file/d/1R1dDyL09BMt3gVUUMm3vgprD0LDbgkin/view) will walk you through the application and its usage.
-![alt text](https://github.com/SheylaPopovich/scribe-life-made-easy/blob/main/Assets/note-taker-landingpage.png)
+![alt text](https://github.com/SheylaPopovich/staff-intelligence/blob/main/assets/screenshoot-si1.png)
 <br>
 <br>
-![alt text](https://github.com/SheylaPopovich/scribe-life-made-easy/blob/main/Assets/note-taker-savedpage.png)
+![alt text](https://github.com/SheylaPopovich/staff-intelligence/blob/main/assets/screenshoot-si2.png)
 <br>
 <br>
 
@@ -38,6 +39,6 @@ If you want to contact me you can email me at [SheylaPopovich](mailto:sheylapopo
 <br>
 
 ## **License**
-The README Generator content management system is released under the under terms of the [MIT License.](https://github.com/SheylaPopovich/README-generator/blob/main/LICENSE)
+The Staff Intelligence content management system is released under the under terms of the [MIT License.](https://github.com/SheylaPopovich/README-generator/blob/main/LICENSE)
 <br>Copyright (c) 2021 [Sheyla Popovich](https://github.com/SheylaPopovich)
 <br>
