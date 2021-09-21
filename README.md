@@ -25,7 +25,9 @@ MySQL Workbench
 
 ## **Application** 
 The following images show the web application's appearance and functionality:
-This [demo video](https://drive.google.com/file/d/1R1dDyL09BMt3gVUUMm3vgprD0LDbgkin/view) will walk you through the application and its usage.
+This [demo video](https://drive.google.com/file/d/1R1dDyL09BMt3gVUUMm3vgprD0LDbgkin/view) will walk you through the application.
+<br>
+Samples of the project:<br>
 ![alt text](https://github.com/SheylaPopovich/staff-intelligence/blob/main/assets/screenshoot-si1.png)
 <br>
 <br>
